@@ -60,14 +60,22 @@ const App = () => {
     };
     persons.some(even)
       ? update(newName, newNumber)
-      : PersonsService.create(personObject).then((response) => {
-          setPersons(persons.concat(response));
-          setNotificationClass("success");
-          setNotificationMessage("Added " + response.name);
-          setTimeout(() => {
-            setNotificationMessage(null);
-          }, 5000);
-        });
+      : PersonsService.create(personObject)
+          .then((response) => {
+            setPersons(persons.concat(response));
+            setNotificationClass("success");
+            setNotificationMessage("Added " + response.name);
+            setTimeout(() => {
+              setNotificationMessage(null);
+            }, 5000);
+          })
+          .catch((error) => {
+            setNotificationMessage(error.response.data.error);
+            setNotificationClass("error");
+            setTimeout(() => {
+              setNotificationMessage(null);
+            }, 5000);
+          });
     setNewName("");
     setNewNumber("");
   };

@@ -5,7 +5,7 @@ if (process.argv.length < 3) {
   console.log("give password as argument");
   console.log("only password");
   process.exit(1);
-} else if (process.argv.length == 3) {
+} else if (process.argv.length === 3) {
   retrive = true;
 }
 
@@ -35,7 +35,7 @@ if (retrive) {
     name: process.argv[3],
     number: process.argv[4],
   });
-  person.save().then((result) => {
+  person.save().then(() => {
     console.log("person saved!");
     mongoose.connection.close();
   });
