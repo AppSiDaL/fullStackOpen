@@ -1,0 +1,58 @@
+{
+  "notes": [
+    {
+      "content": "the app state is in redux store",
+      "important": true,
+      "id": 1
+    },
+    {
+      "content": "state changes are made with actions",
+      "important": true,
+      "id": 2
+    },
+    {
+      "content": "MEXICO",
+      "id": 3
+    },
+    {
+      "content": "mx",
+      "id": 4
+    },
+    {
+      "content": "MEXICO",
+      "id": 5
+    }
+  ],
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-123456",
+      "id": 1
+    },
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "id": 2
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": 3
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "39-23-6423122",
+      "id": 4
+    },
+    {
+      "name": "PERLA MICHELLE MARTINEZ RAMON",
+      "number": "asdasd",
+      "id": 5
+    },
+    {
+      "name": "Gilberto Davalos Nasdava",
+      "number": "asdasda",
+      "id": 6
+    }
+  ]
+}
