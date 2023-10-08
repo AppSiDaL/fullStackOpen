@@ -1,8 +1,8 @@
 import { StyleSheet, View } from 'react-native';
 
-import { Route, Routes, Navigate } from 'react-router-native';
+import { Route, Routes } from 'react-router-native';
 
-import RepositoryList from './RespositoryList';
+import RepositoryList from './RepositoryList';
 import AppBar from './AppBar';
 import theme from './theme';
 import SignIn from './SignIn';
@@ -21,7 +21,6 @@ function Main() {
       <Routes>
         <Route path="/" element={<RepositoryList />} />
         <Route path="/login" element={<SignIn />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </View>
   );

@@ -5,8 +5,8 @@ import CardStats from './CardStats';
 export default function RepositoryItem({ repo }) {
   return (
     <View style={{ backgroundColor: 'white' }}>
-      <CardHeader repo={repo} />
-      <CardStats repo={repo} />
+      <CardHeader repo={repo.node} />
+      <CardStats repo={repo.node} />
     </View>
   );
 }
