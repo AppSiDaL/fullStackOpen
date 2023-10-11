@@ -6,7 +6,10 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "airbnb/hooks"
+        "airbnb/hooks",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jest/recommended"
     ],
     "plugins": [
         "react",

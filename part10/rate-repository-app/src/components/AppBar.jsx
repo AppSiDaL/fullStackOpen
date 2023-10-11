@@ -12,7 +12,8 @@ import { ME } from '../graphql/queries';
 const styles = StyleSheet.create({
   container: {
     paddingTop: Constants.statusBarHeight,
-    width: 200,
+    alignItems: 'center',
+    width: 150,
   },
   scrollView: {
     backgroundColor: '#24292e',
@@ -47,17 +48,46 @@ function AppBar() {
             </Link>
           </Pressable>
         </View>
-        <View style={[styles.container]}>
-          {!data.me ? (
-            <Link to="/login">
-              <Text style={styles.text}>Login</Text>
-            </Link>
-          ) : (
-            <Pressable onPress={() => hanldeLogout()}>
-              <Text style={styles.text}>Logout</Text>
-            </Pressable>
-          )}
-        </View>
+        {!data?.me ? (
+          <>
+            <View style={[styles.container]}>
+              <Pressable>
+                <Link to="/login">
+                  <Text style={styles.text}>Login</Text>
+                </Link>
+              </Pressable>
+            </View>
+            <View style={[styles.container]}>
+              <Pressable>
+                <Link to="/signUp">
+                  <Text style={styles.text}>Sign Up</Text>
+                </Link>
+              </Pressable>
+            </View>
+          </>
+        ) : (
+          <>
+            <View style={[styles.container]}>
+              <Pressable>
+                <Link to="/review">
+                  <Text style={styles.text}>Create Review</Text>
+                </Link>
+              </Pressable>
+            </View>
+            <View style={[styles.container]}>
+              <Pressable>
+                <Link to="/myReviews">
+                  <Text style={styles.text}>My Reviews</Text>
+                </Link>
+              </Pressable>
+            </View>
+            <View style={[styles.container]}>
+              <Pressable onPress={() => hanldeLogout()}>
+                <Text style={styles.text}>Logout</Text>
+              </Pressable>
+            </View>
+          </>
+        )}
       </ScrollView>
     </View>
   );

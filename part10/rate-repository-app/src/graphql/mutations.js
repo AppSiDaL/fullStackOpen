@@ -1,9 +1,38 @@
 import { gql } from '@apollo/client';
 
 export const SIGN_USER = gql`
-mutation {
-  authenticate(credentials: { username: "kalle", password: "password" }) {
+mutation Mutation($credentials: AuthenticateInput) {
+  authenticate(credentials: $credentials) {
     accessToken
   }
 }
 `;
+
+export const CREATE_REVIEW = gql`
+mutation Mutation($review: CreateReviewInput) {
+  createReview(review: $review) {
+    createdAt
+    id
+    repositoryId
+    userId
+    user {
+      username
+    }
+    repository {
+      fullName
+      id
+    }
+  }
+}`;
+
+export const CREATE_USER = gql`mutation CreateUser($user: CreateUserInput) {
+  createUser(user: $user) {
+    createdAt
+    id
+    username
+  }
+}`;
+export const DELETE_REVIEW = gql`
+ mutation Mutation($deleteReviewId: ID!) {
+  deleteReview(id: $deleteReviewId)
+}`;

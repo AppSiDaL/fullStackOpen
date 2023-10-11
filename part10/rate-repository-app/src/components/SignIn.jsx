@@ -7,7 +7,7 @@ import * as yup from 'yup';
 import FormikTextInput from './FormikTextInput';
 import useSignIn from '../hooks/useSignIn';
 
-export default function BodyMassIndexForm() {
+export default function BodyMassIndexForm({handleSubmitTest}) {
   const [signIn] = useSignIn();
 
   const initialValues = {
@@ -34,11 +34,11 @@ export default function BodyMassIndexForm() {
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={handleSubmit}
+      onSubmit={handleSubmitTest?handleSubmitTest:handleSubmit}
       validationSchema={validationSchema}
     >
       {(
-        { handleSubmit }, // Cambia submit por handleSubmit
+        { handleSubmit },
       ) => (
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
           <FormikTextInput name="username" placeholder="UserName" />
@@ -48,7 +48,7 @@ export default function BodyMassIndexForm() {
             secureTextEntry
           />
           <Pressable
-            onPress={handleSubmit}
+            onPress={handleSubmitTest?handleSubmitTest:handleSubmit}
             style={{
               justifyContent: 'center',
               backgroundColor: '#38509C',

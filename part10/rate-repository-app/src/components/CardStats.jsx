@@ -6,7 +6,7 @@ export default function CardStats({ repo }) {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ padding: 8, flex: 1 }}>
           <Text style={{ fontWeight: 'bold' }}>
-            {repo.stargazersCount}
+            {repo?.stargazersCount}
           </Text>
           <Text>
             Stars
@@ -14,7 +14,7 @@ export default function CardStats({ repo }) {
         </View>
         <View style={{ margin: 8, flex: 1 }}>
           <Text style={{ fontWeight: 'bold' }}>
-            {repo.forksCount}
+            {repo?.forksCount}
           </Text>
           <Text>
             Forks
@@ -22,7 +22,7 @@ export default function CardStats({ repo }) {
         </View>
         <View style={{ margin: 8, flex: 1 }}>
           <Text style={{ fontWeight: 'bold' }}>
-            {repo.reviewCount}
+            {repo?.reviewCount}
           </Text>
           <Text>
             Reviews
@@ -30,7 +30,7 @@ export default function CardStats({ repo }) {
         </View>
         <View style={{ margin: 8, flex: 1 }}>
           <Text style={{ fontWeight: 'bold' }}>
-            {repo.ratingAverage}
+            {repo?.ratingAverage}
           </Text>
           <Text>
             Rating
