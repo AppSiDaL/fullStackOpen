@@ -20,8 +20,8 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
+        run: cd part11/full-stack-open-pokedex
         run: npm install
-        working-directory: ../part11/full-stack-open-pokedex
 
       - name: Check style
         run: npm run eslint
