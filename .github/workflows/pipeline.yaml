@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: ./part11/full-stack-open-pokedex
+        working-directory: part11/full-stack-open-pokedex
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -23,10 +23,8 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: ls -l && cd part11/full-stack-open-pokedex && npm install
-        working-directory: ./part11/full-stack-open-pokedex
+        run:  cd part11/full-stack-open-pokedex && npm install
 
       - name: Check style
-        run: npm run eslint
-        working-directory: ./part11/full-stack-open-pokedex
+        run: cd part11/full-stack-open-pokedex && npm run eslint
 
