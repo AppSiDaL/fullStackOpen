@@ -23,7 +23,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: ls -l && cd part11/full-stack-open-pokedex && ls -l
+        run: ls -l && cd part11/full-stack-open-pokedex && npm install
         working-directory: ./part11/full-stack-open-pokedex
 
       - name: Check style
