@@ -28,3 +28,9 @@ jobs:
       - name: Check style
         run: cd part11/full-stack-open-pokedex && npm run eslint
 
+      - name: Build
+        run:  cd part11/full-stack-open-pokedex && npm run build
+
+      - name: testing
+        run: cd part11/full-stack-open-pokedex && npm run test
+
