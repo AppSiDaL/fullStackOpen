@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: ./app
+        working-directory: ./part11/full-stack-open-pokedex
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install && ls -l
+        run: npm install
         working-directory: ./part11/full-stack-open-pokedex
 
       - name: Check style
