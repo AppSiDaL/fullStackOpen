@@ -38,6 +38,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           command: cd part11/full-stack-open-pokedex && npm run test:e2e
-          start: npm run start-prod
+          start: cd part11/full-stack-open-pokedex && npm run start-prod
           wait-on: http://localhost:8080
 
