@@ -40,6 +40,16 @@ jobs:
           command: cd part11/full-stack-open-pokedex && ls -l && npm run test:e2e
           start: cd part11/full-stack-open-pokedex && ls -l && npm run start-prod
           wait-on: http://localhost:5000
-
-
+      
+      - name: deploy render
+        - uses: actions/checkout@v3
+          - uses: JorgeLNJunior/render-deploy@v1.4.2
+            with:
+              service_id: https://api.render.com/deploy/srv-ckld3ibj89us73e01pp0?key=hNnVKzhEEgY # required
+              api_key: rnd_k0iP4wY9mRIwQVIckzvxbvTigf9Y # required
+              clear_cache: false # Clear build cache. Optional
+              wait_deploy: false # Wait until the deploy status is successful. Warning! Free Render services can take +5 minutes to be fully deployed. Optional
+              github_deployment: false # Create a GitHub deployment. Optional
+              deployment_environment: 'production' # GitHub deployment enviroment name. Optional
+              github_token: ${{ secrets.GITHUB_TOKEN }} # Remove if github_deployment is false. Optional
 
