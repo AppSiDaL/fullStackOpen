@@ -35,9 +35,10 @@ jobs:
         run: cd part11/full-stack-open-pokedex && npm run test
 
       - name: e2e tests
+        run:  cd part11/full-stack-open-pokedex
         uses: cypress-io/github-action@v5
         with:
           command: cd part11/full-stack-open-pokedex && npm run test:e2e
-          start: cd part11/full-stack-open-pokedex && ls -l
+          start: cd part11/full-stack-open-pokedex && npm run start-prod
           wait-on: http://localhost:8080
 
