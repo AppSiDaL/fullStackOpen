@@ -40,7 +40,7 @@ jobs:
           command: cd part11/full-stack-open-pokedex && ls -l && npm run test:e2e
           install: false
           start: cd part11/full-stack-open-pokedex && ls -l && npm run start-prod
-          wait-on: http://localhost:8080
+          wait-on: http://localhost:5000
 
 
 
