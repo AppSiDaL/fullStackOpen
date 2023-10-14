@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: part11/full-stack-open-pokedex
+        working-directory: /home/runner/work/fullStackOpen/fullStackOpen/part11/full-stack-open-pokedex
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
