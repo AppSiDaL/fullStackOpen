@@ -1,0 +1,35 @@
+Script started on 2023-10-19 12:25:40-06:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="148" LINES="11"]
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12/script-answers[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12/script-answers[00m$ cd ..
+[?2004l[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo docker contianer ls
+[?2004l[sudo] password for appsidal: 
+docker: 'contianer' is not a docker command.
+See 'docker --help'
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo docker contianer ls[C[C[C[C[C[C[1P ls[1P ls[1P ls[1P ls[1P lsa lsi lsn lse lsr ls
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS             PORTS                                         NAMES
+d36970416bc1   redis     "docker-entrypoint.s…"   24 hours ago   Up About an hour   0.0.0.0:6379->6379/tcp, :::6379->6379/tcp     todo-backend-redis-1
+e3f18dec7e60   mongo     "docker-entrypoint.s…"   39 hours ago   Up About an hour   0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend-mongo-1
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7mdocker exec -it wonderful_ramanujan bash[27mdocker exec -it wonderful_ramanujan bash[1@s[1@u[C[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P bash[1P basht basho bashd basho bash- bashb basha bashc bashk bashe bashn bashd bash- bashr bashe bashd bashi bashs bash
+[?2004lError response from daemon: No such container: todo-backend-redis
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo docker exec -it todo-backend-redis bash[C[C[C[C[C[C[C[C[C[C[C- bash1 bash
+[?2004l[?2004hroot@d36970416bc1:/data# redis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> k[17C[0K127.0.0.1:6379> ke[18C[0K127.0.0.1:6379> key[19C[0K127.0.0.1:6379> keys[20C[0K127.0.0.1:6379> keys [0;90;49mpattern[0m[21C[0K127.0.0.1:6379> keys *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> keys *[22C
+1) "added"
+127.0.0.1:6379> [0K127.0.0.1:6379> g[17C[0K127.0.0.1:6379> ge[18C[0K127.0.0.1:6379> get[19C[0K127.0.0.1:6379> get [0;90;49mkey[0m[20C[0K127.0.0.1:6379> get a[0;90;49m key[0m[21C[0K127.0.0.1:6379> get ad[0;90;49m key[0m[22C[0K127.0.0.1:6379> get add[0;90;49m key[0m[23C[0K127.0.0.1:6379> get adde[0;90;49m key[0m[24C[0K127.0.0.1:6379> get added[0;90;49m key[0m[25C[0K127.0.0.1:6379> get added[25C
+"0"
+127.0.0.1:6379> [0K127.0.0.1:6379> s[17C[0K127.0.0.1:6379> se[18C[0K127.0.0.1:6379> set[19C[0K127.0.0.1:6379> set [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[20C[0K127.0.0.1:6379> set a[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[21C[0K127.0.0.1:6379> set ad[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[22C[0K127.0.0.1:6379> set add[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[23C[0K127.0.0.1:6379> set adde[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[24C[0K127.0.0.1:6379> set added[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[25C[0K127.0.0.1:6379> set added [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[26C[0K127.0.0.1:6379> set added 9[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[27C[0K127.0.0.1:6379> set added 90[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[28C[0K127.0.0.1:6379> set added 900[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[29C[0K127.0.0.1:6379> set added 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[30C[0K127.0.0.1:6379> set added 9001[30C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> set added 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[30C[0K127.0.0.1:6379> set added 9001[30C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> d[17C[0K127.0.0.1:6379> de[18C[0K127.0.0.1:6379> del[19C[0K127.0.0.1:6379> del [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> del a[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> del ad[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> del add[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> del adde[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> del added[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> del added[25C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> del added[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> set added 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[30C[0K127.0.0.1:6379> get added[0;90;49m key[0m[25C[0K127.0.0.1:6379> keys *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> keys *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> keys *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> keys *[22C
+(empty array)
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@d36970416bc1:/data# exit
+[?2004lexit
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ exit
+[?2004lexit
+
+Script done on 2023-10-19 14:50:08-06:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,136 @@
+Script started on 2023-10-17 11:41:20-06:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="155" LINES="13"]
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004ldocker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004l[sudo] password for appsidal: 
+Unable to find image 'ubuntu:latest' locally
+docker: Error response from daemon: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io": dial tcp [2600:1f18:2148:bc01:a3b0:6734:c617:7c5c]:443: connect: network is unreachable.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+docker: Error response from daemon: Head "https://registry-1.docker.io/v2/library/ubuntu/manifests/latest": Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io": dial tcp [2600:1f18:2148:bc01:a3b0:6734:c617:7c5c]:443: connect: network is unreachable.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7mdocker container run -it ubuntu bash[27m[1Pdocker container run -it ubuntu bas[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+docker: Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io on 172.29.80.1:53: read udp 172.29.94.221:45654->172.29.80.1:53: i/o timeout.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ clearsudo docker container run -it ubuntu bashclear[Ksudo docker container run -it ubuntu bash[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcho "Hello"xit[Kclear[1Pexitcho "Hello"xit[Kdocker container run -it ubuntu bashexit[Kcho "Hello"xit[Kclearsudo systemctl statusexit[Ksudo -e /etc/wsl.confsystemctl status[7Pwsl --shutdownsudo systemctl status-e /etc/wsl.confexit[Ksudo systemctl statusclear[K[1Pexitcho "Hello"xit[Kdocker container run -it ubuntu bash[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Ksudo docker container run -it ubuntu bashclear[Ksudo docker container run -it ubuntu bashclear[K[K[7msudo docker run hello-world[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo docker run hello-world
+[A
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7mdocker run -it ubuntu bash[27mdocker run -it ubuntu bash
+[?2004ldocker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo [7mdocker run -it ubuntu bash[27mdocker run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+docker: Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io on 172.29.80.1:53: read udp 172.29.94.221:55449->172.29.80.1:53: i/o timeout.
+See 'docker run --help'.
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7mdocker pull ubuntu[27mdocker pull ubuntu
+[?2004lUsing default tag: latest
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/create?fromImage=ubuntu&tag=latest": dial unix /var/run/docker.sock: connect: permission denied
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo [7mdocker pull ubuntu[27mdocker pull ubuntu
+[?2004lçUsing default tag: latest
+Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp [2600:1f18:2148:bc02:cfd8:db68:ea1f:277c]:443: connect: network is unreachable
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ clearsudo docker pull ubuntu
+[?2004lUsing default tag: latest
+Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io on 172.29.80.1:53: read udp 172.29.94.221:60903->172.29.80.1:53: i/o timeout
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7msudo nano /etc/resolv.conf[27msudo nano /etc/resolv.conf
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;71H(B[0;7m[ Reading... ](B[m[11;70H(B[0;7m[ Read 4 lines ](B[m[H(B[0;7m  GNU nano 7.2                                                          /etc/resolv.conf                                                                   [1;154H(B[m[12d(B[0;7m^G(B[m Help[12;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[12;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[12;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[13d(B[0;7m^X(B[m Exit[13;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[13;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[13;120H(B[0;7mM-6(B[m Copy[13;137H(B[0;7m^Q(B[m Where Was[2d[36m# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:[3d# [network][4d# generateResolvConf = false[5d[39m(B[mnameserver 172.29.80.1[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;90H(B[0;7m*[11d(B[m[K[1;154H[6dnameserver 8.8.8.8[8dnameserver 8.8.4.4[?12l[?25h[?25l[?12l[?25h[A[?25l[7;11r[11;1H
+[1;13r[6;19H[?12l[?25h[?25l[11d(B[0;7mSave modified buffer?                                                                                                                                      [12;1H Y(B[m Yes[K[13d(B[0;7m N(B[m No  [13;17H(B[0;7m^C(B[m Cancel[K[11;23H[?12l[?25h[?25l[12d(B[0;7m^G(B[m Help[12;39H(B[0;7mM-D(B[m DOS Format[12;77H(B[0;7mM-A(B[m Append[12;115H(B[0;7mM-B(B[m Backup File[13d(B[0;7m^C(B[m Cancel[17G         [13;39H(B[0;7mM-M(B[m Mac Format[13;77H(B[0;7mM-P(B[m Prepend[13;115H(B[0;7m^T(B[m Browse[11d(B[0;7mFile Name to Write: /etc/resolv.conf(B[m[?12l[?25h[?25l[11;70H[1K (B[0;7m[ Writing... ](B[m[K[1;90H(B[0;7m [154G(B[m[11;70H(B[0;7m[ Wrote 6 lines ](B[m[J[13d[?12l[?25h[13;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7msudo systemctl daemon-reload[27msudo systemctl daemon-reload
+[?2004l[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ [7msudo systemctl restart docker[27msudo systemctl restart docker
+[?2004l[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo [7mdocker pull ubuntu[27mdocker pull ubuntu
+[?2004lUsing default tag: latest
+latest: Pulling from library/ubuntu
+
+[1A[2Kaece8493d397: Pulling fs layer [1B[1A[2Kaece8493d397: Downloading [>                                                  ]  298.2kB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=>                                                 ]  609.5kB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==>                                                ]  1.232MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==>                                                ]  1.543MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===>                                               ]  1.855MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===>                                               ]  2.166MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [====>                                              ]  2.477MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [====>                                              ]  2.779MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=====>                                             ]  3.402MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [======>                                            ]  3.713MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=======>                                           ]  4.336MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=======>                                           ]  4.647MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [========>                                          ]   5.27MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=========>                                         ]  5.892MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==========>                                        ]  6.204MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===========>                                       ]  6.515MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [============>                                      ]  7.138MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=============>                                     ]   7.76MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==============>                                    ]  8.383MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===============>                                   ]  9.001MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [================>                                  ]  9.935MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=================>                                 ]  10.56MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==================>                                ]  10.87MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===================>                               ]  11.49MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [====================>                              ]  12.11MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=====================>                             ]  12.73MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [======================>                            ]  13.36MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=======================>                           ]  13.98MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [========================>                          ]   14.6MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=========================>                         ]  15.21MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==========================>                        ]  15.84MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===========================>                       ]  16.46MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [============================>                      ]  17.07MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=============================>                     ]  17.69MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==============================>                    ]     18MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==============================>                    ]   18.3MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [================================>                  ]  18.93MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=================================>                 ]  19.55MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==================================>                ]  20.17MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===================================>               ]  20.79MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [====================================>              ]  21.41MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=====================================>             ]  22.03MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [======================================>            ]  22.65MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=======================================>           ]  23.28MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [========================================>          ]   23.9MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=========================================>         ]  24.52MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==========================================>        ]  25.14MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===========================================>       ]  25.77MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [============================================>      ]  26.39MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=============================================>     ]  27.01MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [==============================================>    ]  27.63MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [===============================================>   ]  28.26MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [================================================>  ]  28.88MB/29.54MB[1B[1A[2Kaece8493d397: Downloading [=================================================> ]   29.5MB/29.54MB[1B[1A[2Kaece8493d397: Download complete [1B[1A[2Kaece8493d397: Extracting [>                                                  ]  327.7kB/29.54MB[1B[1A[2Kaece8493d397: Extracting [======>                                            ]  3.604MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [===========>                                       ]  6.554MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=============>                                     ]  8.192MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [================>                                  ]   9.83MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=======================>                           ]  13.76MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=================================>                 ]  19.66MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=========================================>         ]  24.25MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [===========================================>       ]  25.56MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [===========================================>       ]  25.89MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [===============================================>   ]  28.18MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=================================================> ]  29.16MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [=================================================> ]  29.49MB/29.54MB[1B[1A[2Kaece8493d397: Extracting [==================================================>]  29.54MB/29.54MB[1B[1A[2Kaece8493d397: Pull complete [1BDigest: sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ sudo docker pull ubuntusystemctl restart docker[1Pdaemon-reload[2Pnano /etc/resolv.conf[3Pdocker pull ubuntuclear[Ksudo docker pull ubuntuclear[Ksudo docker pull ubuntu[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo docker run -it ubuntu bash
+[?2004l[?2004h]0;root@15f5583caea4: /root@15f5583caea4:/# ls -l
+[?2004ltotal 48
+lrwxrwxrwx   1 root root    7 Oct  4 02:08 [0m[01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mboot[0m
+drwxr-xr-x   5 root root  360 Oct 17 17:53 [01;34mdev[0m
+drwxr-xr-x   1 root root 4096 Oct 17 17:53 [01;34metc[0m
+drwxr-xr-x   2 root root 4096 Apr 18  2022 [01;34mhome[0m
+lrwxrwxrwx   1 root root    7 Oct  4 02:08 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx   1 root root    9 Oct  4 02:08 [01;36mlib32[0m -> [01;34musr/lib32[0m
+lrwxrwxrwx   1 root root    9 Oct  4 02:08 [01;36mlib64[0m -> [01;34musr/lib64[0m
+lrwxrwxrwx   1 root root   10 Oct  4 02:08 [01;36mlibx32[0m -> [01;34musr/libx32[0m
+drwxr-xr-x   2 root root 4096 Oct  4 02:08 [01;34mmedia[0m
+drwxr-xr-x   2 root root 4096 Oct  4 02:08 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4096 Oct  4 02:08 [01;34mopt[0m
+dr-xr-xr-x 254 root root    0 Oct 17 17:53 [01;34mproc[0m
+drwx------   2 root root 4096 Oct  4 02:12 [01;34mroot[0m
+drwxr-xr-x   5 root root 4096 Oct  4 02:12 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 Oct  4 02:08 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   2 root root 4096 Oct  4 02:08 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Oct 17 17:53 [01;34msys[0m
+drwxrwxrwt   2 root root 4096 Oct  4 02:12 [30;42mtmp[0m
+drwxr-xr-x  14 root root 4096 Oct  4 02:08 [01;34musr[0m
+drwxr-xr-x  11 root root 4096 Oct  4 02:12 [01;34mvar[0m
+[?2004h]0;root@15f5583caea4: /root@15f5583caea4:/# cd usr
+[?2004l[?2004h]0;root@15f5583caea4: /usrroot@15f5583caea4:/usr# ll
+[?2004ltotal 64
+drwxr-xr-x 14 root root  4096 Oct  4 02:08 [0m[01;34m.[0m/
+drwxr-xr-x  1 root root  4096 Oct 17 17:53 [01;34m..[0m/
+drwxr-xr-x  2 root root 12288 Oct  4 02:12 [01;34mbin[0m/
+drwxr-xr-x  2 root root  4096 Apr 18  2022 [01;34mgames[0m/
+drwxr-xr-x  2 root root  4096 Apr 18  2022 [01;34minclude[0m/
+drwxr-xr-x 15 root root  4096 Oct  4 02:11 [01;34mlib[0m/
+drwxr-xr-x  2 root root  4096 Oct  4 02:08 [01;34mlib32[0m/
+drwxr-xr-x  2 root root  4096 Oct  4 02:11 [01;34mlib64[0m/
+drwxr-xr-x  4 root root  4096 Oct  4 02:08 [01;34mlibexec[0m/
+drwxr-xr-x  2 root root  4096 Oct  4 02:08 [01;34mlibx32[0m/
+drwxr-xr-x 10 root root  4096 Oct  4 02:08 [01;34mlocal[0m/
+drwxr-xr-x  2 root root  4096 Oct  4 02:12 [01;34msbin[0m/
+drwxr-xr-x 33 root root  4096 Oct  4 02:08 [01;34mshare[0m/
+drwxr-xr-x  2 root root  4096 Apr 18  2022 [01;34msrc[0m/
+[?2004h]0;root@15f5583caea4: /usrroot@15f5583caea4:/usr# cd src
+[?2004l[?2004h]0;root@15f5583caea4: /usr/srcroot@15f5583caea4:/usr/src# ll
+[?2004ltotal 8
+drwxr-xr-x  2 root root 4096 Apr 18  2022 [0m[01;34m.[0m/
+drwxr-xr-x 14 root root 4096 Oct  4 02:08 [01;34m..[0m/
+[?2004h]0;root@15f5583caea4: /usr/srcroot@15f5583caea4:/usr/src# mkdir app
+[?2004l[?2004h]0;root@15f5583caea4: /usr/srcroot@15f5583caea4:/usr/src# cat   >>        ll
+[?2004ltotal 16
+drwxr-xr-x 1 root root 4096 Oct 17 17:54 [0m[01;34m.[0m/
+drwxr-xr-x 1 root root 4096 Oct  4 02:08 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Oct 17 17:54 [01;34mapp[0m/
+[?2004h]0;root@15f5583caea4: /usr/srcroot@15f5583caea4:/usr/src# cd app
+[?2004l[?2004h]0;root@15f5583caea4: /usr/src/approot@15f5583caea4:/usr/src/app# cat >> index.js
+[?2004lindex file
+^C
+[?2004h]0;root@15f5583caea4: /usr/src/approot@15f5583caea4:/usr/src/app# more index.js 
+[?2004lindex file
+[?2004h]0;root@15f5583caea4: /usr/src/approot@15f5583caea4:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;appsidal@D-16: ~/Desktop/FullStackCourse/fullStackOpen/part12[01;32mappsidal@D-16[00m:[01;34m~/Desktop/FullStackCourse/fullStackOpen/part12[00m$ exit
+[?2004lexit
+
+Script done on 2023-10-17 11:56:04-06:00 [COMMAND_EXIT_CODE="0"]
